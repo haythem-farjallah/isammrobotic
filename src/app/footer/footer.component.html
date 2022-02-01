@@ -1,0 +1,167 @@
+<footer id="newsletter">
+  <div class="container">
+    <div class="row m-3">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="section-heading">
+          <h4>CONTACT US</h4>
+        </div>
+      </div>
+      <div class="col-lg-6 offset-lg-3 mb-3">
+        <!-- <form [formGroup]="formTwo" (ngSubmit)="validateAll()" *ngIf="formIndex == 1">
+            <div>
+              <label for="">fullname 
+               
+               </label>
+              <input type="text" formControlName="fullname"  >
+            </div>
+            <br>
+            <button type="submit" [disabled]=" ! formTwo.valid " >valider</button>
+            
+          </form> -->
+        <!-- <form class="contact-form row">
+          <div class="form-field col x-50">
+            <input id="name" class="input-text js-input" type="text" required />
+            <label class="label" for="name">Name</label>
+          </div>
+          <div class="form-field col x-50">
+            <input
+              id="email"
+              class="input-text js-input"
+              type="email"
+              required
+            />
+            <label class="label" for="email">E-mail</label>
+          </div>
+          <div class="form-field col x-100">
+            <input
+              id="message"
+              class="input-text js-input"
+              type="text"
+              required
+            />
+            <label class="label" for="message">Message</label>
+          </div>
+          <div class="form-field col x-100 align-center">
+            <input class="submit-btn" type="submit" value="Submit" />
+          </div>
+        </form> -->
+        <form [formGroup]="contact" (ngSubmit)="validate()" id="search">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <fieldset>
+                <input
+                  formControlName="email"
+                  type="address"
+                  name="address"
+                  placeholder="Your name..."
+                  class="email p-2 m-3"
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <fieldset>
+                <input
+                  formControlName="name"
+                  type="address"
+                  name="address"
+                  class="email p-2 m-3"
+                  placeholder="Last Name ..."
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <fieldset>
+                <input
+                  formControlName="email"
+                  type="address"
+                  name="address"
+                  class="email p-2 m-3"
+                  placeholder="Email Address..."
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <fieldset>
+                <input
+                  formControlName="email"
+                  type="address"
+                  name="address"
+                  class="email p-2 m-3"
+                  placeholder="Your Number"
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-12 col-sm-12">
+              <fieldset>
+                <input
+                  formControlName="email"
+                  type="address"
+                  name="address"
+                  class="email p-2 m-3"
+                  placeholder="Your message..."
+                  autocomplete="on"
+                  required
+                />
+              </fieldset>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <fieldset>
+                <button type="submit" class="main-button">
+                  Subscribe Now <i class="fa fa-angle-right"></i>
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer-widget">
+          <h4>Contact Us</h4>
+          <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+          <p><a href="#">010-020-0340</a></p>
+          <p><a href="#">info@company.co</a></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-widget">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="footer-widget">
+          <h4>About Our Company</h4>
+          <div class="logo">
+            <img src="../../assets/template/assets/images/logo.png" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="copyright-text">
+          <p>Copyright © 2022 haythem sadk</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

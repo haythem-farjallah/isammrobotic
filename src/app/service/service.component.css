@@ -1,0 +1,48 @@
+.small {
+  font-size: 0.75rem;
+}
+.card-heading {
+  font-size: 2.25rem;
+}
+.styled-link {
+  text-decoration: none;
+  outline: none;
+  color: #2196fe;
+  transition: all 0.25s ease-in;
+}
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+  color: #536dfe;
+}
+.shadow-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+.blue-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+.blue-hover:hover {
+  transform: translateY(-5px);
+  border: none;
+  border-bottom: 5px solid #2196fe;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.tittle-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
